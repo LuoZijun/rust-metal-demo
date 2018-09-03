@@ -1,0 +1,25 @@
+[package]
+name = "metal-demo"
+version = "0.1.0"
+authors = ["luozijun <luozijun.assistant@gmail.com>"]
+
+[[example]]
+name = "ui"
+path = "examples/ui.rs"
+
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5"
+winit = "0.17"
+sema = "0.1.4"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gfx_device_metal = "0.3.0"
+metal = "0.12"
+cocoa = "0.18"
+core-graphics = "0.17"
+objc = "0.2.5"
+objc_id = "0.1"
+objc-foundation = "0.1"
+block = "0.1.5"
